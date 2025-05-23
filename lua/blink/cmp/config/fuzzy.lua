@@ -38,6 +38,7 @@ local fuzzy = {
     use_unsafe_no_lock = false,
     sorts = { 'score', 'sort_text' },
     prebuilt_binaries = {
+      base_url_template = 'https://github.com/saghen/blink.cmp/releases/download/%s/',
       download = true,
       ignore_version_mismatch = false,
       force_version = nil,
