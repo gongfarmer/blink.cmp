@@ -27,6 +27,7 @@ function download.ensure_downloaded(callback)
       if version.current.missing and pcall(require, 'blink.cmp.fuzzy.rust') then return end
 
       local target_git_tag = download_config.force_version or version.git.tag
+      utils.notify({ 'target_git_tag=', target_git_tag })
 
       -- built locally
       if version.current.sha ~= nil then
